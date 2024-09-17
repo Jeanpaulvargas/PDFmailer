@@ -1,0 +1,87 @@
+/* Estilo para tablas con la clase .simple-table */
+.simple-table {
+    width: 100%; /* La tabla ocupa todo el ancho del contenedor. */
+    border-collapse: collapse; /* Las bordes de las celdas se colapsan en una sola línea. */
+    margin: 20px 0; /* Espaciado arriba y abajo de la tabla. */
+    font-size: 16px; /* Tamaño de fuente para el contenido de la tabla. */
+    text-align: left; /* Alineación del texto a la izquierda dentro de las celdas. */
+}
+
+/* Estilo para los encabezados (th) y las celdas (td) de la tabla */
+.simple-table th,
+.simple-table td {
+    padding: 12px 15px; /* Espaciado interno de 12px arriba y abajo, 15px a los lados. */
+    border: 1px solid #ddd; /* Bordes de 1px de color gris claro. */
+}
+
+/* Estilo para el encabezado de la tabla */
+.simple-table thead {
+    background-color: #007bff; /* Fondo azul del encabezado de la tabla. */
+    color: white; /* Texto en blanco en el encabezado. */
+}
+
+/* Estilo para las filas pares en el cuerpo de la tabla */
+.simple-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo gris claro para filas pares para mejorar la legibilidad. */
+}
+
+/* Estilo global para el cuerpo del documento */
+body {
+    font-family: 'Arial', sans-serif; /* Tipo de fuente Arial para el texto del documento. */
+    margin: 20px; /* Espaciado alrededor del contenido del cuerpo. */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad del texto. */
+    color: #2C3E50; /* Color de texto gris oscuro. */
+    background-color: #f4f7f6; /* Color de fondo ligeramente gris claro. */
+    padding: 40px; /* Espaciado interno del cuerpo del documento. */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo del documento. */
+}
+
+/* Estilo para el encabezado de nivel 1 (h1) */
+h1 {
+    text-align: center; /* Centra el texto del encabezado. */
+    font-size: 28px; /* Tamaño de fuente para el encabezado. */
+    color: #2C3E50; /* Color del texto en el encabezado. */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas. */
+    letter-spacing: 2px; /* Espaciado entre letras. */
+    margin-bottom: 20px; /* Espaciado inferior debajo del encabezado. */
+    border-bottom: 2px solid #2980B9; /* Línea de borde inferior azul debajo del encabezado. */
+    padding-bottom: 10px; /* Espaciado interno inferior del encabezado. */
+}
+
+/* Estilo para párrafos (p) */
+p {
+    font-size: 16px; /* Tamaño de fuente para el texto del párrafo. */
+    text-align: justify; /* Justifica el texto del párrafo. */
+    margin-bottom: 15px; /* Espaciado inferior debajo del párrafo. */
+    max-width: 800px; /* Ancho máximo del párrafo. */
+    margin: auto; /* Centra el párrafo horizontalmente. */
+}
+
+/* Estilo para la primera letra del párrafo */
+p::first-letter {
+    font-size: 22px; /* Tamaño de fuente más grande para la primera letra. */
+    font-weight: bold; /* Pone en negrita la primera letra. */
+    color: #2980B9; /* Color de la primera letra. */
+}
+
+/* Estilo adicional para el segundo párrafo y siguientes */
+p + p {
+    text-indent: 40px; /* Sangría de 40px al inicio del segundo párrafo y siguientes. */
+}
+
+/* Estilo específico para la impresión */
+@media print {
+    body {
+        background-color: white; /* Fondo blanco para la impresión. */
+        margin: 0; /* Elimina el margen en la impresión. */
+        padding: 0; /* Elimina el espaciado interno en la impresión. */
+    }
+
+    h1 {
+        font-size: 24px; /* Tamaño de fuente más pequeño para el encabezado en impresión. */
+    }
+
+    p {
+        font-size: 14px; /* Tamaño de fuente más pequeño para los párrafos en impresión. */
+    }
+}
